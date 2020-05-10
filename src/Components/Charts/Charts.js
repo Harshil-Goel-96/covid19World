@@ -27,19 +27,18 @@ useEffect(() => {
 },[]);
 //console.log(dailyData)
 
-
+const filtereddata = dailyData.filter((item,i) => (i>=(dailyData.length-30) && i<(dailyData.length)));
 
 const lineChart = (
 
     dailyData.length?<Line data={{
     
 
-        labels : dailyData.map(({date}) => date),
-    
+        labels : filtereddata.map(({date}) => date),
         datasets : [
             {
                 label:'Infected',
-                data : dailyData.map(({confirmed}) => confirmed),
+                data : filtereddata.map(({confirmed}) => confirmed),
                 fill : true,
                 borderColor: '#1976D2',
                 
@@ -47,7 +46,7 @@ const lineChart = (
             },
             {
                 label:'Deaths',
-                data : dailyData.map(({deaths}) => deaths),
+                data : filtereddata.map(({deaths}) => deaths),
                 fill:true,
                 borderColor: '#F44336',  
             }
