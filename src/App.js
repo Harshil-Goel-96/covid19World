@@ -19,6 +19,7 @@ class App extends React.Component {
     
   
   async componentDidMount(){
+    //console.log("checking");
     //fetching card data from api
     const fetchedData = await fetchData();
     this.setState({data : fetchedData});
