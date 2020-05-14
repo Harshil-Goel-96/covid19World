@@ -23,7 +23,7 @@ return(
                         <CountUp start={0} end={data.confirmed.value} duration={1.5} separator="," />
                     </Typography>
                     <Typography color="textSecondary">{new Date(data.lastUpdate).toDateString()}</Typography>
-                    <Typography variant="body2">No of active COVID19 cases</Typography>
+                    <Typography variant="body2">No of confirmed COVID19 cases</Typography>
                 </CardContent>
             </Grid>
             <Grid item component={Card} xs={12} md={3} className={cx(styles.card,styles.recovered)}>
