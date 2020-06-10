@@ -18,7 +18,7 @@ return(
         <Grid container spacing={2} justify="center" >
             <Grid item component={Card} xs={12} md={3} className={cx(styles.card,styles.infected)}>
                 <CardContent>
-                    <Typography color="textPrimary" gutterBottom>Infected</Typography>
+                    <Typography color="textPrimary" gutterBottom>Confirmed</Typography>
                     <Typography variant="h5">
                         <CountUp start={0} end={data.confirmed.value} duration={1.5} separator="," />
                     </Typography>
