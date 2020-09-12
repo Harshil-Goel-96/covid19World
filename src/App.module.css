@@ -1,29 +1,26 @@
-body{
-    background-color: rgb(255, 255, 255);
+body {
+  background-color: rgb(255, 255, 255);
 }
 
-.AppContainer{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.image{
+.image {
+  width: 250px;
 
-    width:250px;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-@media (max-width:770px){
-
-    .container{
-        margin:0 30%;
-    }
-    .image{
-        width: 70%;
-    }
+@media (max-width: 770px) {
+  .container {
+    margin: 0 30%;
+  }
+  .image {
+    width: 70%;
+  }
 }
